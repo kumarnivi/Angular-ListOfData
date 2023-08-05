@@ -2,7 +2,7 @@
 
 <div>
     <div>
-        <nav class="navbar bg-dark border-bottom border-body  sticky-bottom">
+        <nav class="navbar text-bg-success border-bottom border-body  sticky-bottom">
             <div class="container-fluid">
               <a class="navbar-brand">CAR</a>
               <form class="d-flex" role="search">
@@ -13,10 +13,11 @@
           </nav>
     </div>
     <br>
-    <div class="card  w-75 mb-7 p-3">
+    <div class="container-fluid " >
+      <div class=" card  w-75 mb-7 p-3 shadow p-3 mb-5 bg-body-tertiary rounded">
         <form action="" >
             <label for="" >Sudent Name:</label> 
-            <input class="form-control" type="text" placeholder="Enter Text" aria-label="Disabled input example"  type="text" name="carname" id="" [(ngModel)]="carName"> <br/>
+            <input class="form-control col-md-6 " type="text" placeholder="Enter Text" aria-label="Disabled input example"  type="text" name="carname" id="" [(ngModel)]="carName"> <br/>
             <button class="btn btn-secondary btn-sm me-md-2 " (click)="addCar()">Submit</button>
         </form>
     </div>
@@ -25,4 +26,6 @@
     
     <app-list [carsInput]="cars">
     </app-list>
+    </div>
+    
 </div>
